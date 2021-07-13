@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <style>
+            body {
+                background: #EEE;
+            }
+            h1 {
+                text-align: center;
+                color: #222;
+                margin: 0;
+            }
+            h3 {
+                text-align: center;
+                color: #444;
+                margin: 0;
+            }
+            ul {
+                list-style: none;
+            }
+            li {
+                background: #FFF;
+                width: 50%;
+                margin: 25px auto;
+                padding: 10px 30px;
+                box-shadow: gray 5px 5px 10px 2px;
+            }
+            .address {
+                font-weight: bold;
+                font-size: 22px;
+                color: #333;
+            }
+            .zip {
+                font-size: 20px; 
+            }
+
+            .keyword, .availability, .beds, .price {
+                font-size: 18px;
+            }
+
+            .zip, .price {
+                margin-bottom: 10px;
+            }
+            .phone, .link, .time {
+                font-size: 16px;
+            }
+
+            .image {
+                margin: 10px;
+                text-align: center;
+            }
+            img {   
+                max-width: 100%;
+                min-width: 65%;
+                max-height: 350px;
+                box-shadow: gray 2px 2px 3px 3px;
+                object-fit: contain;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>Found {{metadata["numListings"]}} listings, {{metadata["numNewListings"]}} new.</h1>
+        <h3>Search: {{ metadata["search"]["keywords"] | joinComma }}</h3>
+        <ul>
+        {% for listing in listings: %}
+            <li>
+                <div class="address">{{listing["address"]}}</div>
+                <div class="zip">{{listing["zip"] | zipCode }}</div>
+                <div class="keyword">Keyword: {{listing["keyword"]}}</div>
+                <div class="availability">{{listing["availability"]}}</div>
+                <div class="beds">{{listing["beds"]}}</div>
+                <div class="price">{{listing["price"]}}</div>
+                <div class="phone">{{listing["phone"]}}</div>
+                <div class="phone"><a href="{{listing['link']}}">{{listing['link']}}</a></div>
+                <div class="time">First seen: {{listing['time'] | timestamp }}</div>
+                <div class="image"><img src="{{listing['image']}}"/></div>
+            </li>
+        {% endfor %}
+    </ul>
+    </body>
+</html>

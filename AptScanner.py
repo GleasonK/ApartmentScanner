@@ -16,25 +16,23 @@ def scanApts(search, keyword, page=None):
     # Scan apartments.com listings
     conn = http.client.HTTPSConnection("www.apartments.com")
     payload = json.dumps({
-      "Map": {
+       "Map": {
         "BoundingBox": {
           "LowerRight": {
-            "Latitude": 42.33401,
-            "Longitude": -71.06862
+            "Latitude": 42.33751,
+            "Longitude": -71.05413
           },
           "UpperLeft": {
-            "Latitude": 42.35663,
-            "Longitude": -71.11682
+            "Latitude": 42.36808,
+            "Longitude": -71.11593
           }
-        },
-        "CountryCode": "US"
+        }
       },
       "Geography": {
         "GeographyType": 7,
-        "Address": {},
         "Location": {
-          "Latitude": 42.344,
-          "Longitude": -71.097
+          "Latitude": 42.351,
+          "Longitude": -71.094
         }
       },
       "Listing": {

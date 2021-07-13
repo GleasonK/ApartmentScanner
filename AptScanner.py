@@ -217,6 +217,7 @@ def loadRecentListings():
     folder = "data"
     path = os.path.join(os.getcwd(), folder)
     files = os.listdir(path)
+    files.sort() # ensure highest alphabetical file is list
     if len(files) == 0:
         return []
     cacheFile = files[-1]

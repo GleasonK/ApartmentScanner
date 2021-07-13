@@ -12,6 +12,66 @@
         "time": 1626150148.9901135
     },
     {
+        "address": "Condo for Rent, Boston, MA",
+        "zip": "212 Hemenway St, Boston, MA 02115",
+        "keyword": "deck",
+        "availability": "Avail. Sep 01",
+        "beds": "4 Bed",
+        "price": "$6,000",
+        "image": "https://images1.apartments.com/i2/3mis3dD1ppDbSqhuETdxhz1CcVZsA3C2KoBgveLTyHc/118/212-hemenway-st-unit-2-boston-ma-building-photo.jpg",
+        "phone": "tel:8446475433",
+        "link": "https://www.apartments.com/212-hemenway-st-boston-ma-unit-2/1ytxm54/",
+        "time": 1626150936.0707262
+    },
+    {
+        "address": "Condo for Rent, Brookline, MA",
+        "zip": "73 Thatcher St, Brookline, MA 02446",
+        "keyword": "deck",
+        "availability": "Avail. Sep 01",
+        "beds": "4 Bed",
+        "price": "$5,100",
+        "image": "https://images1.apartments.com/i2/tlTzf9FB2ZePyNRMXhk_nsVsRts6IPJwtZcX_tohUiA/118/73-thatcher-st-brookline-ma-building-photo.jpg",
+        "phone": "tel:8445402835",
+        "link": "https://www.apartments.com/73-thatcher-st-brookline-ma/c4eemje/",
+        "time": 1626150936.0727234
+    },
+    {
+        "address": "64 Louis Prang St, Boston, MA",
+        "zip": "Boston, MA 02115",
+        "keyword": "deck",
+        "availability": "Avail. Sep 01",
+        "beds": "4 Bed",
+        "price": "$4,600",
+        "image": "https://images1.apartments.com/i2/XwABBd59Sy1RlMtBLfgJwzhH_aOxvD6hMy6BvryfQ6E/118/64-louis-prang-st-boston-ma-building-photo.jpg",
+        "phone": "tel:7819247534",
+        "link": "https://www.apartments.com/64-louis-prang-st-boston-ma/xcdwhmq/",
+        "time": 1626150936.0738363
+    },
+    {
+        "address": "80 Fenway, Boston, MA",
+        "zip": "Boston, MA 02115",
+        "keyword": "deck",
+        "availability": "Avail. Sep 01",
+        "beds": "4 Bed",
+        "price": "$5,250",
+        "image": "https://images1.apartments.com/i2/Fevywl2d6tZw_JnPgfG28gh4M9S65mXDwTImJyduR7k/118/80-fenway-boston-ma-building-photo.jpg",
+        "phone": "tel:7819247519",
+        "link": "https://www.apartments.com/80-fenway-boston-ma/57gk5yn/",
+        "time": 1626150936.0748715
+    },
+    {
+        "address": "70 Fenway, Boston, MA",
+        "zip": "Boston, MA 02115",
+        "keyword": "deck",
+        "availability": "Avail. Aug 31",
+        "beds": "4 Bed",
+        "price": "$4,900",
+        "image": "https://images1.apartments.com/i2/3Bz19Rfy4kSmuhwcOCnu6TIZbjIGdFqKbkgJwPF-Ogo/118/70-fenway-boston-ma-building-photo.jpg",
+        "phone": "tel:7818275324",
+        "link": "https://www.apartments.com/70-fenway-boston-ma/2fepekc/",
+        "time": 1626150936.0758908
+    },
+    {
         "address": "116 W Newton St, Boston, MA",
         "zip": "Boston, MA 02118",
         "keyword": "deck",
@@ -22,6 +82,18 @@
         "phone": "tel:7819084206",
         "link": "https://www.apartments.com/116-w-newton-st-boston-ma/hlxdkf1/",
         "time": 1626150936.076927
+    },
+    {
+        "address": "160 Newbury St, Boston, MA",
+        "zip": "Boston, MA 02116",
+        "keyword": "deck",
+        "availability": "Avail. Sep 01",
+        "beds": "4 Bed",
+        "price": "$6,400",
+        "image": "https://images1.apartments.com/i2/JygvdZd1s-Ggj_pbUfOfnCCd5tOX6Ss61_JBG0f4S_Q/118/160-newbury-st-boston-ma-building-photo.jpg",
+        "phone": "tel:4758821025",
+        "link": "https://www.apartments.com/160-newbury-st-boston-ma/41245bh/",
+        "time": 1626150936.0820127
     },
     {
         "address": "15 Worthington St, Boston, MA",
@@ -94,6 +166,18 @@
         "phone": "tel:8448703058",
         "link": "https://www.apartments.com/82-hammond-st-boston-ma/4c6sf9l/",
         "time": 1626151371.0180914
+    },
+    {
+        "address": "1 Chandler St, Boston, MA",
+        "zip": "Boston, MA 02116",
+        "keyword": "porch",
+        "availability": "Avail. Sep 01",
+        "beds": "4 Bed",
+        "price": "$4,000",
+        "image": "https://images1.apartments.com/i2/4oA8IOLKZ-3CTwjoANkvnG2UMdXsBDu3yD0j3jILPKc/118/1-chandler-st-boston-ma-building-photo.jpg",
+        "phone": "tel:7816830422",
+        "link": "https://www.apartments.com/1-chandler-st-boston-ma/1wy3jh4/",
+        "time": 1626151371.6327405
     },
     {
         "address": "21 Euston St, Brookline, MA",
@@ -481,78 +565,6 @@
     },
     {
         "address": "Condo for Rent, Boston, MA",
-        "zip": "212 Hemenway St, Boston, MA 02115",
-        "keyword": "deck",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$6,000",
-        "image": "https://images1.apartments.com/i2/3mis3dD1ppDbSqhuETdxhz1CcVZsA3C2KoBgveLTyHc/118/212-hemenway-st-unit-2-boston-ma-building-photo.jpg",
-        "phone": "tel:8446475433",
-        "link": "https://www.apartments.com/212-hemenway-st-boston-ma-unit-2/1ytxm54/",
-        "time": 1626195362.2738347
-    },
-    {
-        "address": "Condo for Rent, Brookline, MA",
-        "zip": "73 Thatcher St, Brookline, MA 02446",
-        "keyword": "deck",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$5,100",
-        "image": "https://images1.apartments.com/i2/tlTzf9FB2ZePyNRMXhk_nsVsRts6IPJwtZcX_tohUiA/118/73-thatcher-st-brookline-ma-building-photo.jpg",
-        "phone": "tel:8445402835",
-        "link": "https://www.apartments.com/73-thatcher-st-brookline-ma/c4eemje/",
-        "time": 1626195362.2748816
-    },
-    {
-        "address": "64 Louis Prang St, Boston, MA",
-        "zip": "Boston, MA 02115",
-        "keyword": "deck",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$4,600",
-        "image": "https://images1.apartments.com/i2/XwABBd59Sy1RlMtBLfgJwzhH_aOxvD6hMy6BvryfQ6E/118/64-louis-prang-st-boston-ma-building-photo.jpg",
-        "phone": "tel:7819247534",
-        "link": "https://www.apartments.com/64-louis-prang-st-boston-ma/xcdwhmq/",
-        "time": 1626195579.3650646
-    },
-    {
-        "address": "80 Fenway, Boston, MA",
-        "zip": "Boston, MA 02115",
-        "keyword": "deck",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$5,250",
-        "image": "https://images1.apartments.com/i2/Fevywl2d6tZw_JnPgfG28gh4M9S65mXDwTImJyduR7k/118/80-fenway-boston-ma-building-photo.jpg",
-        "phone": "tel:7819247519",
-        "link": "https://www.apartments.com/80-fenway-boston-ma/57gk5yn/",
-        "time": 1626195639.6995
-    },
-    {
-        "address": "70 Fenway, Boston, MA",
-        "zip": "Boston, MA 02115",
-        "keyword": "deck",
-        "availability": "Avail. Aug 31",
-        "beds": "4 Bed",
-        "price": "$4,900",
-        "image": "https://images1.apartments.com/i2/3Bz19Rfy4kSmuhwcOCnu6TIZbjIGdFqKbkgJwPF-Ogo/118/70-fenway-boston-ma-building-photo.jpg",
-        "phone": "tel:7818275324",
-        "link": "https://www.apartments.com/70-fenway-boston-ma/2fepekc/",
-        "time": 1626195639.700469
-    },
-    {
-        "address": "160 Newbury St, Boston, MA",
-        "zip": "Boston, MA 02116",
-        "keyword": "deck",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$6,400",
-        "image": "https://images1.apartments.com/i2/JygvdZd1s-Ggj_pbUfOfnCCd5tOX6Ss61_JBG0f4S_Q/118/160-newbury-st-boston-ma-building-photo.jpg",
-        "phone": "tel:4758821025",
-        "link": "https://www.apartments.com/160-newbury-st-boston-ma/41245bh/",
-        "time": 1626195760.4932184
-    },
-    {
-        "address": "Condo for Rent, Boston, MA",
         "zip": "464 Commonwealth Avenue, Boston, MA 02215",
         "keyword": "deck",
         "availability": "Avail. Now",
@@ -561,7 +573,7 @@
         "image": "https://images1.apartments.com/i2/Ubf-zAwtkhoOgqIiEWUJdM0gRIWDhI2QvGytPrupujQ/115/464-commonwealth-avenue-unit-21-boston-ma-building-photo.jpg",
         "phone": "tel:4132440770",
         "link": "https://www.apartments.com/464-commonwealth-avenue-boston-ma-unit-21/jzshfq6/",
-        "time": 1626196047.5459218
+        "time": 1626197879.265808
     },
     {
         "address": "66 Fenway, Boston, MA",
@@ -573,18 +585,6 @@
         "image": "https://images1.apartments.com/i2/XRxYxMU9QLDLeHUEHusbQ3kez8iGlLCqicuBP-kgOXM/115/66-fenway-boston-ma-building-photo.jpg",
         "phone": "tel:8443124059",
         "link": "https://www.apartments.com/66-fenway-boston-ma/9tnmxh5/",
-        "time": 1626196047.546928
-    },
-    {
-        "address": "1 Chandler St, Boston, MA",
-        "zip": "Boston, MA 02116",
-        "keyword": "porch",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$4,000",
-        "image": "https://images1.apartments.com/i2/4oA8IOLKZ-3CTwjoANkvnG2UMdXsBDu3yD0j3jILPKc/118/1-chandler-st-boston-ma-building-photo.jpg",
-        "phone": "tel:7816830422",
-        "link": "https://www.apartments.com/1-chandler-st-boston-ma/1wy3jh4/",
-        "time": 1626196048.516373
+        "time": 1626197879.2977474
     }
 ]

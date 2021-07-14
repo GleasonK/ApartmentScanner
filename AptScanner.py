@@ -171,13 +171,17 @@ def getListingsForKeyword(search, keyword):
         bsObj = BeautifulSoup(htmlStr, "html.parser")
         listingsJson = parseListings(bsObj, keyword)
         listings.extend(listingsJson)
+    print("Found",len(listingsJson),"for keyword",keyword)
     return listings;
 
 def getListingsForKeywords(search):
     listings = [];
     for keyword in search["keywords"]:
         listings.extend(getListingsForKeyword(search, keyword))
-    return getUniqueListings(listings);
+    print("Found",len(listings),"for keywords:",", ".join(search["keywords"]))
+    unique = getUniqueListings(listings);
+    print("Unique listings:",len(unique),"("+str(len(listings)-len(unique))+" duplicates)")
+    return unique
 
 def getMetadataForListings(search, listings, newListings):
     # Return stats object used by html template
@@ -267,7 +271,7 @@ def emailListings(emails, listings, metadata):
     # Setup email headers
     # Create message container - the correct MIME type is multipart/alternative.
     msg = MIMEMultipart('alternative')
-    msg['Subject'] = "New Apartment Listings"
+    msg['Subject'] = "New Apartment Listings [v2]"
     msg['From'] = mail_user
     msg['To'] = ",".join(emails)
 
@@ -318,7 +322,12 @@ def parseZipCode(zipText):
         "02446" : "North Brookline / Coolidge",
         "02115" : "Symphony / Back Bay / Longwood Medical",
         "02118" : "South End / Shumwut / South of Washington",
-        "02215" : "Fenway / Kenmore / Longwood Medical"
+        "02215" : "Fenway / Kenmore / Longwood Medical",
+        "02139" : "Cambridgeport",
+        "02113" : "North End",
+        "02109" : "North End",
+        "02180" : "Beacon Hill / Government Center",
+        "02114" : "West End / Beacon Hill",
     };
     return zipCode + " - " + zips.get(zipCode, zipText)
 

@@ -1,5 +1,17 @@
 [
     {
+        "address": "property-title not found.",
+        "zip": "property-address not found.",
+        "keyword": "private",
+        "availability": "availability not found.",
+        "beds": "bed-range not found.",
+        "price": "price-range not found.",
+        "image": "Error: data-image not found.",
+        "phone": "phone-link not found.",
+        "link": "property-link not found.",
+        "time": 1626150148.9901134
+    },
+    {
         "address": "16 Greenwich St, Boston, MA",
         "zip": "Boston, MA 02120",
         "keyword": "patio",
@@ -36,42 +48,6 @@
         "time": 1626150936.0727234
     },
     {
-        "address": "64 Louis Prang St, Boston, MA",
-        "zip": "Boston, MA 02115",
-        "keyword": "deck",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$4,600",
-        "image": "https://images1.apartments.com/i2/XwABBd59Sy1RlMtBLfgJwzhH_aOxvD6hMy6BvryfQ6E/118/64-louis-prang-st-boston-ma-building-photo.jpg",
-        "phone": "tel:7819247534",
-        "link": "https://www.apartments.com/64-louis-prang-st-boston-ma/xcdwhmq/",
-        "time": 1626150936.0738363
-    },
-    {
-        "address": "80 Fenway, Boston, MA",
-        "zip": "Boston, MA 02115",
-        "keyword": "deck",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$5,250",
-        "image": "https://images1.apartments.com/i2/Fevywl2d6tZw_JnPgfG28gh4M9S65mXDwTImJyduR7k/118/80-fenway-boston-ma-building-photo.jpg",
-        "phone": "tel:7819247519",
-        "link": "https://www.apartments.com/80-fenway-boston-ma/57gk5yn/",
-        "time": 1626150936.0748715
-    },
-    {
-        "address": "70 Fenway, Boston, MA",
-        "zip": "Boston, MA 02115",
-        "keyword": "deck",
-        "availability": "Avail. Aug 31",
-        "beds": "4 Bed",
-        "price": "$4,900",
-        "image": "https://images1.apartments.com/i2/3Bz19Rfy4kSmuhwcOCnu6TIZbjIGdFqKbkgJwPF-Ogo/118/70-fenway-boston-ma-building-photo.jpg",
-        "phone": "tel:7818275324",
-        "link": "https://www.apartments.com/70-fenway-boston-ma/2fepekc/",
-        "time": 1626150936.0758908
-    },
-    {
         "address": "116 W Newton St, Boston, MA",
         "zip": "Boston, MA 02118",
         "keyword": "deck",
@@ -82,18 +58,6 @@
         "phone": "tel:7819084206",
         "link": "https://www.apartments.com/116-w-newton-st-boston-ma/hlxdkf1/",
         "time": 1626150936.076927
-    },
-    {
-        "address": "160 Newbury St, Boston, MA",
-        "zip": "Boston, MA 02116",
-        "keyword": "deck",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$6,400",
-        "image": "https://images1.apartments.com/i2/JygvdZd1s-Ggj_pbUfOfnCCd5tOX6Ss61_JBG0f4S_Q/118/160-newbury-st-boston-ma-building-photo.jpg",
-        "phone": "tel:4758821025",
-        "link": "https://www.apartments.com/160-newbury-st-boston-ma/41245bh/",
-        "time": 1626150936.0820127
     },
     {
         "address": "15 Worthington St, Boston, MA",
@@ -168,30 +132,6 @@
         "time": 1626151371.0180914
     },
     {
-        "address": "1 Chandler St, Boston, MA",
-        "zip": "Boston, MA 02116",
-        "keyword": "porch",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$4,000",
-        "image": "https://images1.apartments.com/i2/4oA8IOLKZ-3CTwjoANkvnG2UMdXsBDu3yD0j3jILPKc/118/1-chandler-st-boston-ma-building-photo.jpg",
-        "phone": "tel:7816830422",
-        "link": "https://www.apartments.com/1-chandler-st-boston-ma/1wy3jh4/",
-        "time": 1626151371.6327405
-    },
-    {
-        "address": "21 Euston St, Brookline, MA",
-        "zip": "Brookline, MA 02446",
-        "keyword": "porch",
-        "availability": "Avail. Now",
-        "beds": "4-5 Bed",
-        "price": "$4,800 - 5,300",
-        "image": "https://images1.apartments.com/i2/mdacVnPstFW0h03mGfXM6-dtCny628fWOxMoUv5QwRI/115/21-euston-st-brookline-ma-building-photo.jpg",
-        "phone": "tel:8442411512",
-        "link": "https://www.apartments.com/21-euston-st-brookline-ma/rqyn2k1/",
-        "time": 1626151371.6338692
-    },
-    {
         "address": "15 Vancouver St, Boston, MA",
         "zip": "Boston, MA 02115",
         "keyword": "porch",
@@ -202,18 +142,6 @@
         "phone": "tel:7745104159",
         "link": "https://www.apartments.com/15-vancouver-st-boston-ma/2424rj9/",
         "time": 1626151371.6350312
-    },
-    {
-        "address": "24 Edgerly Rd, Boston, MA",
-        "zip": "Boston, MA 02115",
-        "keyword": "porch",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$5,200",
-        "image": "https://images1.apartments.com/i2/KPEwlgweF5Q5yydLrcTuuMr62xyISe9oWe3j7iypsQM/118/24-edgerly-rd-boston-ma-building-photo.jpg",
-        "phone": "phone-link not found.",
-        "link": "https://www.apartments.com/24-edgerly-rd-boston-ma/7qt862x/",
-        "time": 1626151371.6370287
     },
     {
         "address": "9 Wigglesworth St, Roxbury Crossing, MA",
@@ -238,18 +166,6 @@
         "phone": "tel:8447719099",
         "link": "https://www.apartments.com/3-wigglesworth-st-boston-ma/7658gpy/",
         "time": 1626151371.6390674
-    },
-    {
-        "address": "1203 Beacon St, Brookline, MA",
-        "zip": "Brookline, MA 02446",
-        "keyword": "porch",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$4,700 - 4,800",
-        "image": "https://images1.apartments.com/i2/fXo3_2Kp4nGBbAqn9fJCeaC_sdoSGpG5BCnerAD3Nj4/118/1203-beacon-st-brookline-ma-building-photo.jpg",
-        "phone": "tel:8446184692",
-        "link": "https://www.apartments.com/1203-beacon-st-brookline-ma/7p3dz5w/",
-        "time": 1626151371.6401007
     },
     {
         "address": "998 Tremont St, Boston, MA",
@@ -312,18 +228,6 @@
         "time": 1626151372.343171
     },
     {
-        "address": "772 Columbus Ave, Boston, MA",
-        "zip": "Boston, MA 02120",
-        "keyword": "private",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$5,200",
-        "image": "https://images1.apartments.com/i2/fKIYXbgdDQDJ7mmngbDC6Nbb4vfzED37W2ViLYvWlfI/118/772-columbus-ave-boston-ma-building-photo.jpg",
-        "phone": "tel:7815797256",
-        "link": "https://www.apartments.com/772-columbus-ave-boston-ma/03q0c20/",
-        "time": 1626151372.344158
-    },
-    {
         "address": "22 Euston St, Brookline, MA",
         "zip": "Brookline, MA 02446",
         "keyword": "private",
@@ -372,30 +276,6 @@
         "time": 1626151372.3542821
     },
     {
-        "address": "659 Massachusetts Ave, Boston, MA",
-        "zip": "Boston, MA 02118",
-        "keyword": "private",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$6,000",
-        "image": "https://images1.apartments.com/i2/PHrsMNQcCBEPGvowM6uqQGWG0C05vbKIXIhYFn2b7PI/118/659-massachusetts-ave-boston-ma-building-photo.jpg",
-        "phone": "tel:8572166699",
-        "link": "https://www.apartments.com/659-massachusetts-ave-boston-ma/ml1nnfl/",
-        "time": 1626151372.3553085
-    },
-    {
-        "address": "property-title not found.",
-        "zip": "property-address not found.",
-        "keyword": "private",
-        "availability": "availability not found.",
-        "beds": "bed-range not found.",
-        "price": "price-range not found.",
-        "image": "Error: data-image not found.",
-        "phone": "phone-link not found.",
-        "link": "property-link not found.",
-        "time": 1626151372.3564649
-    },
-    {
         "address": "46 Carlton St, Brookline, MA",
         "zip": "Brookline, MA 02446",
         "keyword": "private",
@@ -408,18 +288,6 @@
         "time": 1626151372.5681436
     },
     {
-        "address": "1203 Beacon St, Brookline, MA",
-        "zip": "Brookline, MA 02446",
-        "keyword": "pool",
-        "availability": "Avail. Now",
-        "beds": "4 Bed",
-        "price": "$4,300",
-        "image": "https://images1.apartments.com/i2/6El7r3W6HKX9EqkaCh5Qd0WlGnf5XHN-wjBJWTdQga0/115/1203-beacon-st-brookline-ma-building-photo.jpg",
-        "phone": "tel:6177630335",
-        "link": "https://www.apartments.com/1203-beacon-st-brookline-ma/cygtksd/",
-        "time": 1626151373.2362397
-    },
-    {
         "address": "25 Worthington St, Boston, MA",
         "zip": "Boston, MA 02120",
         "keyword": "patio",
@@ -430,18 +298,6 @@
         "phone": "tel:7819247354",
         "link": "https://www.apartments.com/25-worthington-st-boston-ma/53pb1dp/",
         "time": 1626152098.019289
-    },
-    {
-        "address": "460 Shawmut Ave, Boston, MA",
-        "zip": "Boston, MA 02118",
-        "keyword": "patio",
-        "availability": "Avail. Now",
-        "beds": "4 Bed",
-        "price": "$4,250",
-        "image": "https://images1.apartments.com/i2/gmL4jnCCPWWxY6ffshIpQ288Ma8grZYvilqpevPTNs0/118/460-shawmut-ave-boston-ma-building-photo.jpg",
-        "phone": "phone-link not found.",
-        "link": "https://www.apartments.com/460-shawmut-ave-boston-ma/cz433pd/",
-        "time": 1626152123.8498037
     },
     {
         "address": "68 Hammond St, Boston, MA",
@@ -516,18 +372,6 @@
         "time": 1626157533.2850702
     },
     {
-        "address": "21 Cortes St, Boston, MA",
-        "zip": "Boston, MA 02116",
-        "keyword": "patio",
-        "availability": "Avail. Now",
-        "beds": "4 Bed",
-        "price": "$5,200",
-        "image": "https://images1.apartments.com/i2/d7glSiyawhWoFlJsWh42Qg5qViX0rkedRk7933ELQZ0/118/21-cortes-st-boston-ma-building-photo.jpg",
-        "phone": "phone-link not found.",
-        "link": "https://www.apartments.com/21-cortes-st-boston-ma/521sytq/",
-        "time": 1626157574.003895
-    },
-    {
         "address": "Condo for Rent, Brookline, MA",
         "zip": "38 Linden St, Brookline, MA 02445",
         "keyword": "patio",
@@ -550,41 +394,5 @@
         "phone": "tel:6177527966",
         "link": "https://www.apartments.com/64-louis-prang-st-boston-ma/fbkx1xv/",
         "time": 1626157661.5851433
-    },
-    {
-        "address": "27 Worthington St, Boston, MA",
-        "zip": "Boston, MA 02120",
-        "keyword": "deck",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$5,250",
-        "image": "https://images1.apartments.com/i2/zOuUEd8641E3QM3FzjL7J8l_n23XrjQzOL-IX7BuT4Y/118/27-worthington-st-boston-ma-building-photo.jpg",
-        "phone": "phone-link not found.",
-        "link": "https://www.apartments.com/27-worthington-st-boston-ma/5fz4bwq/",
-        "time": 1626157697.4289782
-    },
-    {
-        "address": "Condo for Rent, Boston, MA",
-        "zip": "464 Commonwealth Avenue, Boston, MA 02215",
-        "keyword": "deck",
-        "availability": "Avail. Now",
-        "beds": "4 Bed",
-        "price": "$5,000",
-        "image": "https://images1.apartments.com/i2/Ubf-zAwtkhoOgqIiEWUJdM0gRIWDhI2QvGytPrupujQ/115/464-commonwealth-avenue-unit-21-boston-ma-building-photo.jpg",
-        "phone": "tel:4132440770",
-        "link": "https://www.apartments.com/464-commonwealth-avenue-boston-ma-unit-21/jzshfq6/",
-        "time": 1626199722.651738
-    },
-    {
-        "address": "66 Fenway, Boston, MA",
-        "zip": "Boston, MA 02115",
-        "keyword": "deck",
-        "availability": "Avail. Sep 01",
-        "beds": "4 Bed",
-        "price": "$5,250",
-        "image": "https://images1.apartments.com/i2/XRxYxMU9QLDLeHUEHusbQ3kez8iGlLCqicuBP-kgOXM/115/66-fenway-boston-ma-building-photo.jpg",
-        "phone": "tel:8443124059",
-        "link": "https://www.apartments.com/66-fenway-boston-ma/9tnmxh5/",
-        "time": 1626199722.715895
     }
 ]

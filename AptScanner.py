@@ -249,8 +249,9 @@ def filterListingsInCache(cache, listings):
 
 # Template rendering functions
 from flask import render_template
-def renderListingHtml(listings, metadata):
+def renderListingHtml(listings, metadata, width):
     path = "listings.html"
+    metadata['width'] = width;
     return render_template(path, listings=listings, metadata=metadata)
 
 # Email Updates
@@ -277,7 +278,7 @@ def emailListings(emails, listings, metadata):
 
     # Create the body of the message (a plain-text and an HTML version).
     text = json.dumps(listings, indent=2)
-    html = renderListingHtml(listings, metadata)
+    html = renderListingHtml(listings, metadata, 75)
 
     # Record the MIME types of both parts - text/plain and text/html.
     part1 = MIMEText(text, 'plain')
@@ -331,6 +332,42 @@ def parseZipCode(zipText):
     };
     return zipCode + " - " + zips.get(zipCode, zipText)
 
+
+def searchAndRender(search):
+    uniqueListings = getListingsForKeywords(search)
+    print("Found", len(uniqueListings), "listings.")
+
+    # Compare with most recent lookups
+    cache = loadRecentListings();
+    cacheSize = len(cache)
+    print("Cache size", cacheSize)
+    (updatedListings, newListings, updatedCache) = filterListingsInCache(cache, uniqueListings);
+
+    # Make search metadata
+    metadata = getMetadataForListings(search, updatedListings, newListings)
+
+    # Sort updateListings by timestamp
+    updatedListings.sort(key=lambda x: x["time"], reverse=True)
+    newListings.sort(key=lambda x: x["time"], reverse=True)
+
+    # Save updated cache if new listings
+    print("New Listings:", len(newListings))
+    print("Updated cache size", len(updatedCache))
+    assert (len(updatedCache)-cacheSize) == len(newListings)
+    if len(updatedCache) != cacheSize:
+        saveListings(updatedCache)
+    else:
+        print("No new listings found. Skipping cache save.")
+
+    # Email new listings, if any
+    if len(newListings) > 0:
+        emails = os.getenv('EMAIL_TO').split(" ")
+        emailListings(emails, newListings, metadata)
+
+    #return  "<pre>" + html.escape(prettyHtml(updatedListings[0]["html"])) + "</pre>"
+    #return "<pre>" + html.escape(json.dumps(updatedListings, indent=2)) + "</pre>"
+    return renderListingHtml(updatedListings, metadata, 50)
+
 @app.route('/')
 def hello_world():
     # Search listings by keywords
@@ -345,36 +382,20 @@ def hello_world():
         "maxPrice" : maxPrice,
         "minBeds" : minBeds,
     };
+    return searchAndRender(search);
 
-    uniqueListings = getListingsForKeywords(search)
-    print("Found", len(uniqueListings), "listings.")
-
-    # Compare with most recent lookups
-    cache = loadRecentListings();
-    print("Cache size", len(cache))
-    (updatedListings, newListings, updatedCache) = filterListingsInCache(cache, uniqueListings);
-
-    # Make search metadata
-    metadata = getMetadataForListings(search, updatedListings, newListings)
-
-    # Sort updateListings by timestamp
-    updatedListings.sort(key=lambda x: x["time"], reverse=True)
-    newListings.sort(key=lambda x: x["time"], reverse=True)
-
-    # Save updated cache if new listings
-    print("New Listings:", len(newListings))
-    print("Updated cache size", len(updatedCache))
-    assert (len(updatedCache)-len(cache)) == len(newListings)
-    if len(updatedCache) != len(cache):
-        saveListings(updatedCache)
-    else:
-        print("No new listings found. Skipping cache save.")
-
-    # Email new listings, if any
-    if len(newListings) > 0:
-        emails = os.getenv('EMAIL_TO').split(" ")
-        emailListings(emails, newListings, metadata)
-
-    #return  "<pre>" + html.escape(prettyHtml(updatedListings[0]["html"])) + "</pre>"
-    #return "<pre>" + html.escape(json.dumps(updatedListings, indent=2)) + "</pre>"
-    return renderListingHtml(updatedListings, metadata)
+@app.route('/3bed')
+def find_3beds():
+    # Search listings by keywords
+    keywords = ["patio", "deck", "roof", "porch", "private", "pool", "yard"]
+    # keywords = ["patio", "deck"]
+    minPrice = 2500
+    maxPrice = 5300
+    minBeds = 3
+    search = {
+        "keywords" : keywords,
+        "minPrice" : minPrice,
+        "maxPrice" : maxPrice,
+        "minBeds" : minBeds,
+    };
+    return searchAndRender(search);

@@ -20,7 +20,6 @@
             }
             li {
                 background: #FFF;
-                width: 50%;
                 margin: 25px auto;
                 padding: 10px 30px;
                 box-shadow: gray 5px 5px 10px 2px;
@@ -63,7 +62,7 @@
         <h3>Search: {{ metadata["search"]["keywords"] | joinComma }}</h3>
         <ul>
         {% for listing in listings: %}
-            <li>
+            <li style="width:{{metadata['width']}}%;">
                 <div class="address">{{listing["address"]}}</div>
                 <div class="zip">{{listing["zip"] | zipCode }}</div>
                 <div class="keyword">Keyword: {{listing["keyword"]}}</div>

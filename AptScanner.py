@@ -258,7 +258,7 @@ def renderListingHtml(listings, metadata, width):
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-def emailListings(emails, listings, metadata):
+def emailListings(email, listings, metadata):
     # Set email body to JSON
 
     # Check environment variables for credentials
@@ -275,7 +275,7 @@ def emailListings(emails, listings, metadata):
     msg = MIMEMultipart('alternative')
     msg['Subject'] = "New Apartment Listings - %d beds [v2]" % beds
     msg['From'] = mail_user
-    msg['To'] = ",".join(emails)
+    msg['To'] = email
 
     # Create the body of the message (a plain-text and an HTML version).
     text = json.dumps(listings, indent=2)
@@ -293,7 +293,7 @@ def emailListings(emails, listings, metadata):
         server.login(mail_user, mail_password)
         server.sendmail(msg["From"], msg["To"], msg.as_string())
         server.close()
-        print('Email sent!')
+        print('Email sent to %s!' % msg["To"])
     except  Exception as e:
         print('Something went wrong...')
         print(e)
@@ -364,7 +364,8 @@ def searchAndRender(search):
     if len(newListings) > 0:
         saveListings(updatedCache)
         emails = os.getenv('EMAIL_TO').split(" ")
-        emailListings(emails, newListings, metadata)
+        for email in emails:
+            emailListings(email, newListings, metadata)
     else:
         print("No new listings found. Skipping cache save.")
 
@@ -375,8 +376,8 @@ def searchAndRender(search):
 @app.route('/')
 def hello_world():
     # Search listings by keywords
-    # keywords = ["patio", "deck", "roof", "porch", "private", "pool", "yard"]
-    keywords = ["patio", "deck"]
+    keywords = ["patio", "deck", "roof", "porch", "private", "pool", "yard"]
+    # keywords = ["patio", "deck"]
     minPrice = 4000
     maxPrice = 6400
     minBeds = 4

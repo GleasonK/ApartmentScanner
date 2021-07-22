@@ -271,8 +271,9 @@ def emailListings(emails, listings, metadata):
 
     # Setup email headers
     # Create message container - the correct MIME type is multipart/alternative.
+    beds = metadata["search"]["minBeds"]
     msg = MIMEMultipart('alternative')
-    msg['Subject'] = "New Apartment Listings [v2]"
+    msg['Subject'] = "New Apartment Listings - %d beds [v2]" % beds
     msg['From'] = mail_user
     msg['To'] = ",".join(emails)
 

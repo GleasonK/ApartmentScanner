@@ -334,8 +334,8 @@ def parseZipCode(zipText):
 @app.route('/')
 def hello_world():
     # Search listings by keywords
-    # keywords = ["patio", "deck", "roof", "porch", "private", "pool", "yard"]
-    keywords = ["patio", "deck"]
+    keywords = ["patio", "deck", "roof", "porch", "private", "pool", "yard"]
+    # keywords = ["patio", "deck"]
     minPrice = 4000
     maxPrice = 6400
     minBeds = 4
@@ -364,16 +364,14 @@ def hello_world():
     # Save updated cache if new listings
     print("New Listings:", len(newListings))
     print("Updated cache size", len(updatedCache))
-    assert (len(updatedCache)-len(cache)) == len(newListings)
-    if len(updatedCache) != len(cache):
-        saveListings(updatedCache)
-    else:
-        print("No new listings found. Skipping cache save.")
 
     # Email new listings, if any
     if len(newListings) > 0:
+        saveListings(updatedCache)
         emails = os.getenv('EMAIL_TO').split(" ")
         emailListings(emails, newListings, metadata)
+    else:
+        print("No new listings found. Skipping cache save.")
 
     #return  "<pre>" + html.escape(prettyHtml(updatedListings[0]["html"])) + "</pre>"
     #return "<pre>" + html.escape(json.dumps(updatedListings, indent=2)) + "</pre>"
